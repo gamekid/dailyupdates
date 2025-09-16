@@ -265,7 +265,7 @@ async function dbSendRequest(id) {
 
 	try {
 
-		const response = await fetch(getParam("server"), {
+		const response = await fetch("https://" + getParam("server"), {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
