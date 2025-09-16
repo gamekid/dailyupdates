@@ -1,0 +1,165 @@
+body {
+    background: url('img/DU_BG.jpg') fixed top center;
+}
+
+table.main {
+    width: 720px;
+    border-collapse: collapse;
+}
+
+div {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.headertitle {
+    position: relative;
+    float: left;
+    display: block;
+    margin: 0px;
+}
+
+div.headeraddbtn {
+    position: relative;
+    float: right;
+    display: block;
+    margin: 0px;
+}
+
+div.errmsg {
+    position: relative;
+    float: left;
+    display: block;
+    font-family: "Trebuchet", sans-serif;
+    color: #ff0000;
+}
+
+div.body {
+    position: relative;
+    float: left;
+    display: block;
+    width: 710px;
+}
+
+div.update {
+    position: relative;
+    float: left;
+    display: block;
+    width: 700px;
+    padding-bottom: 15px;
+}
+
+div.editupdate {
+    position: relative;
+    float: left;
+    display: block;
+    width: 690px;
+}
+
+div.updatetitle {
+    position: relative;
+    float: left;
+    display: block;
+    width: 680px;
+}
+
+div.updatetopbottom {
+    position: relative;
+    float: left;
+    display: block;
+    height: 4px;
+    width: 700px;
+    font-size: 2;
+}
+
+div.updatebody {
+    position: relative;
+    float: left;
+    display: block;
+    background: #ffffff;
+    width: 700px;
+    padding: 5px 10px;
+}
+
+div.updatebyline {
+    position: relative;
+    float: left;
+    display: block;
+    width: 556px;
+    height: 24px;
+}
+
+div.updatebylineid {
+    position: relative;
+    float: left;
+    display: block;
+    width: 18px;
+    color: #ffffff;
+}
+
+div.updateedit {
+    position: relative;
+    float: right;
+    display: block;
+    width: 62px;
+    height: 24px;
+}
+
+div.updatedelete {
+    position: relative;
+    float: right;
+    display: block;
+    width: 64px;
+    height: 24px;
+}
+
+div.footer {
+    position: relative;
+    float: left;
+    display: block;
+    margin-top: 15px;
+}
+
+div.textarea {
+    position: relative;
+    float: left;
+    display: block;
+    background: #ffffff;
+}
+
+div.init {
+    position: relative;
+    float: left;
+    display: block;
+    width: 500px;
+}
+
+div.submit {
+    position: relative;
+    float: right;
+    display: block;
+}
+
+div.bgpicker {
+    position: relative;
+    float: right;
+    display: block;
+    width: 600px;
+}
+
+h3 {
+    margin: 10px 10px 0px 10px;
+    padding: 0px;
+}
+
+.addtitle {
+    font-family: "Trebuchet", sans-serif;
+    font-size: 16;
+    font-weight: bold;
+}
+
+.addtext {
+    font-family: "Times", serif;
+    font-size: 14;
+}
