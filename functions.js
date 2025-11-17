@@ -397,6 +397,8 @@ async function getUpdates() {
 		return;
 	}
 
+	showLoading(true);
+
 	const url = "https://" + getParam("server") + "?collection=" + getParam("collection") + "&filter[archived_at]=null";
 	try {
 		const response = await fetch(url);
@@ -432,6 +434,7 @@ async function getUpdates() {
 		console.error(error.message);
 	}
 
+	showLoading(false);
 	timer = setTimeout(() => getUpdates(), 60000);
 } // getUpdates()
 
