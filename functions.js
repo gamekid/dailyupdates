@@ -312,10 +312,6 @@ return errmsg;
 function checkContent(content) {
 var errmsg = "";
 if (content=="") errmsg += "Please enter update content.<br />";
-if (content.length > 1024) 
-{
-	errmsg += "Your Content field overextends the maximum character count by " +  (content.length - 1024) + ". If you continue to recieve this error, try starting over and use less formatting.<br />";
-}
 return errmsg;
 }
 
