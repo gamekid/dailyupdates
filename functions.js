@@ -4,8 +4,6 @@
 // Removed Alarms, point to new backend Sept 2025
 
 //GLOBAL VARS///////////////////////////////////////
-// timer
-var timer;
 
 //number of updates currently
 var numUpdates;
@@ -23,7 +21,7 @@ var isAddOpen = 0;
 var moveEdit = 0;
 
 //variables for editing
-var isLock;
+var isLock = 0;
 var workingId = -1;
 var bylineTmp = "";
 var editNicEditor;
@@ -380,12 +378,13 @@ function updateDelete(id) {
 } // updateDelete()
 
 async function getUpdates() {
-	if (timer) {
-		clearTimeout(timer);
+
+	if (isLock) {
+		console.log('locked');
+		return;
 	}
 
 	// set-up variable
-	isLock=0;
 	var i;	
 
 	let server = getParam("server");
@@ -431,7 +430,12 @@ async function getUpdates() {
 	}
 
 	showLoading(false);
-	timer = setTimeout(() => getUpdates(), 60000);
 } // getUpdates()
+
+function init() {
+	detectView();
+	getUpdates();
+	setInterval(() => getUpdates(), 60000);
+}
 
 //EOF
